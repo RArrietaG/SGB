@@ -24,6 +24,7 @@ class LoanFactory extends Factory
         return [
             'book_id'       => Book::factory()->create()->id,
             'applicant_id'  => Applicant::factory()->create()->id,
+            'status'        => $this->faker->boolean,
             'loan_date'     => $loanDate,
             'return_date'   => $returnDate,
 
